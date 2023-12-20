@@ -1,0 +1,101 @@
+/* КАСТОМИЗАЦИЯ ТЕМЫ READTHEDOCS */
+
+/* Выравнивание текста документации по ширине */
+/* Кроме таблиц и контейнеров на стартовой */
+
+.document .section p:not(.document .section table p) {
+    text-align: justify;
+    hyphens: auto;
+}
+
+body{color="red"}
+
+.descr,
+.descr dd p {
+    text-align: left !important;
+    hyphens: none !important;
+}
+
+
+/* Фон страницы */
+.wy-nav-content-wrap {
+    background: #fcfcfc;
+}
+
+/* Ширина текста документациии фон. Значение темы -- 800px */
+.wy-nav-content {
+    max-width: 950px;
+    min-height: 100vh;
+  }
+
+/* Убирает иконку с названием продукта на боковой панели */
+.wy-side-nav-search > .icon-home::before {
+    content: none;
+}
+
+/* Шрифт названия продукта в side-nav */
+.wy-side-nav-search .icon-home,
+.wy-nav-top {
+    letter-spacing: 0.05rem;
+}
+
+/* Тень вокруг рисунков и отступ над подписью рисунка */
+.framed img,
+img.framed {
+    border-radius: .3em;
+    box-shadow: rgba(0,0,0,0.05) 0px 1px 4px 0px, rgba(211,216,223,0.33) 0px 15px 20px -1px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #fcfcfc;
+}
+
+/* Стиль заголовков рисунков */
+.section > .figure .caption-text {
+    color: #808080;
+}
+
+/* Цвет ссылок */
+.rst-content a,
+.rst-content a:visited {
+    color: #2196f3;
+}
+
+.rst-content a:hover {
+    color: #2196f3;
+}
+
+/* Цвет боковой панели с поиском */
+.wy-side-nav-search {
+    background-color: #90172d;
+}
+
+#rtd-search-form input {
+    border-color: #5e172d;
+}
+
+.wy-nav-top {
+    background: #90172d;
+}
+
+/* Стилизация моноширинного текста, обрамленного в символы `` `` */
+.rst-content code.literal {
+    color: #404040;
+    border: None;
+    background: none;
+    font-style: italic;
+    white-space: normal;
+}
+
+/* Стилизация класса .guilabel */
+.rst-content .guilabel {
+    white-space: nowrap; /* Запрещает перенос слов в названии команд/кнопок */
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 4px 8px;
+    font-weight: 500;
+}
+
+abbr {
+    cursor: help;
+}
